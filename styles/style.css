@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	
+}
+
+html, body {
+	width: 100%;;
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: #f3f5fc;
+}
+
+header{
+
+	width: 100%;
+	height: 10%;
+}
+
+header img {
+	height: 48px;
+	width: 120px;
+	margin-top: 40px;
+	margin-left: 40px;
+}
+
+
+
+main{
+	width: 100%;
+	height: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	gap: 10px;
+	
+}
+
+
+main section{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 100px;
+	border-radius: 18px;
+	padding: 10px;
+	
+}
+
+
+main aside {
+	
+	width: 25%;
+	height: 100%;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	background-color: #ffffff;
+	border-radius: 20px;
+}
+
+
+
+.textInput{
+	width: 98%;
+	height: 78%;
+}
+
+
+
+.textInput textarea {
+width: 100%;
+height: 100%;
+font-size: 25px;
+border: none;
+outline: none;
+resize: none;
+padding: 10px;
+background: none;
+color: #0a3871;
+	
+}
+
+
+
+#decrypt-area::placeholder{
+	color: #0a3871;
+	font-size: 32px;
+}
+
+
+
+.no-content{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	padding: 20px;
+}
+
+.no-content img {
+width: 80%;
+}
+
+.no-content h3, p {
+	text-align: center;
+}
+
+.no-content h3 {
+	font-size: 24px;
+	color: #343a40;
+}
+
+.no-content p {
+	font-size: 16px;
+	color: #495057;
+}
+
+
+.instruction__container{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	color: #6b7178;
+}
+
+.instruction__container img {
+	height: 16px;
+}
+
+.span-image{
+height: 16px;
+width: 16px;
+}
+
+
+.buttons{
+	width: 100%;
+	height: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+}
+
+
+
+.encrypt-btn{
+	width: 328px;
+	height: 67px;
+	color: #ffffff;
+	background-color: #0a3871;
+	border: 1px solid #0a3871;
+	border-radius: 24px;
+	font-size: 16px;
+	font-weight: 400;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.decrypt-btn{
+	width: 328px;
+	height: 67px;
+	color: #0a3871;
+	background-color: #d8dfe8;
+	border: 1px solid #0a3871;
+	border-radius: 24px;
+	font-size: 16px;
+	font-weight: 400;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.decrypt-btn:hover{
+	background-color: #0a3871;
+	color: #ffffff;
+}
+
+.encrypt-btn:hover{
+	background-color: #d8dfe8;
+	color: #0a3871;
+}
+
+footer {
+	width: 100%;
+	height: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0px 50px;
+	gap: 30px;
+}
+
+footer section {
+	width: 30%;
+	height: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+footer section ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	width: max-content;
+	height: max-content;
+}
+
+footer section ul li {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+footer section ul i {
+	font-size: 35px;
+	color: #0a3871;
+	transition: all 0.1s ease-in-out;
+	
+}
+
+footer section ul i:hover {
+	font-size: 38px;
+}
+
+footer hr {
+	width: 1px;
+	height: 30%;
+	background: rgba(255, 255, 255, 0.2);
+}
+
+footer p{
+	text-align: center;
+	font-size: 18px;
+	color: #495057;
+}
+/*responsive*/
+
+@media only screen and (max-width: 1000px) {
+	html, body {
+		min-width: 100vw;
+		min-height: 100%;
+	}
+
+	main {
+   		flex-direction: column;
+		justify-content: flex-start;
+		height: max-content;
+	}
+
+	main section {
+		width: 90%;
+		height: fit-content;
+		gap: 5px;
+	}
+
+	main aside{
+		width: 90%;
+		height: fit-content;
+	}
+
+	.no-content {
+		height: fit-content;
+	}
+
+	.no-content img {
+		display: none;
+	}
+
+
+}
+
+	@media only screen and (max-width: 700px) {
+		main {
+			padding-bottom: 10px;
+		}
+
+		footer {
+			position: relative;
+			padding: 5px;
+		}
+
+		footer hr {
+			display: none;
+		}
+
+		footer p {
+			display: none;
+		}
+		
+	}
