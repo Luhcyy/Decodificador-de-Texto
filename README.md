@@ -19,7 +19,7 @@ Desafio feito para o Challenge 1 do programa "ONE - Oracle Next Education" com a
 
 ## Descrição
 
-<p>tem a capacidade de codificar e decodificar textos de acordo com as chave de criptografia propostos!</p>
+<p>tem a capacidade de codificar e decodificar textos de acordo com as chave de criptografia propostas!</p>
 
 As "chaves" de criptografia são:
 
