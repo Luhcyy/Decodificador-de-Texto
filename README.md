@@ -18,6 +18,9 @@ Desafio feito para o Challenge 1 do programa "ONE - Oracle Next Education" com a
 </p>
 
 ## Descrição
+
+<p>tem a capacidade de codificar e decodificar textos de acordo com as chave de criptografia propostos!</p>
+
 As "chaves" de criptografia são:
 
 A letra "e" é convertida para "enter"
