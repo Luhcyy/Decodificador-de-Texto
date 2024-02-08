@@ -10,9 +10,20 @@ Desafio feito para o Challenge 1 do programa "ONE - Oracle Next Education" com a
   </a>
 </p>
 
-## protótipo visual do projeto
+## Protótipo visual do projeto
 <p>
   <a href=https://www.figma.com/file/tvFEYhVfZTjdJ5P24RGV21/Alura-Challenge---Desafio-1---L%C3%B3gica?type=design&node-id=16-802&mode=design&t=L0TK8n4oEjeAzLGB-0>
     <img src=https://img.shields.io/badge/Figma-151515?style=for-the-badge&logo=figma&logoColor=white/>
   </a>
+</p>
+
+## Descrição
+
+<p>
+As "chaves" de criptografia são:
+A letra "e" é convertida para "enter"
+A letra "i" é convertida para "imes"
+A letra "a" é convertida para "ai"
+A letra "o" é convertida para "ober"
+A letra "u" é convertida para "ufat"
 </p>
