@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="shortcut icon" href="imgs/encryption.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -14,21 +15,30 @@
 	<header>
 		<img src="imgs/Alura-logo.svg" alt="Logo da Alura">
 	</header>
+	
+	<dialog id="dialog-box">
+		<p id="dialog-text"></p>
+		<button onclick="closeDialog()" id="dialog-close" class="close-btn">Fechar</button>
+	</dialog>
 <main>
 	<section>
  	<div class="textInput">
-		<textarea name="decryptor" id="decrypt-area" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+		<textarea id="decrypt-area" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
  	</div>
 	 <div class="instruction__container">
 		<img src="imgs/Exclamation-circle.svg" class="span-image">
 		<a type="text" class="instruction"> Apenas letras minúsculas e sem acento</a>
    </div>
    <div class="buttons">
-		<button class="encrypt-btn" id=encrypt">Criptografar</button>
-		<button class="decrypt-btn" id="decrypt">Descriptografar</button>
+		<button onclick="encrypt()" class="encrypt-btn" id="encrypt">Criptografar</button>
+		<button onclick="decrypt()" class="decrypt-btn" id="decrypt">Descriptografar</button>
    </div>
    </section>
 	<aside>
+		<div class="showing-content">
+			<textarea id="text-content" cols="10" rows="30"></textarea>
+			<button onclick="copy()" class="copy-btn" id="copy-btn">Copiar texto</button>
+		</div>
 	<div class="no-content">
 		<img class="alura-design" src="imgs/alura-design-art.svg" alt="pessoa com lupa estudando diamante">
 		<h3 >Nenhuma mensagem encontrada</h3>
@@ -55,6 +65,6 @@
 	<hr>
 	 <p>Project made for Oracle Next Education's first challenge</p>
 </footer>
-<script src="/app.js"></script>
+<script src="script/app.js"></script>
 </body>
 </html>

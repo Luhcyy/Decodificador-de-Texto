@@ -4,10 +4,6 @@ body{
 	font-family: 'Poppins', sans-serif;
 }
 
-
-
-
-
 *{
 	margin:0;
 	padding:0;
@@ -39,9 +35,7 @@ header img {
 	margin-left: 40px;
 }
 
-
-
-main{
+main {
 	width: 100%;
 	height: 80%;
 	display: flex;
@@ -52,8 +46,7 @@ main{
 	
 }
 
-
-main section{
+main section {
 	width: 50%;
 	height: 100%;
 	display: flex;
@@ -66,7 +59,6 @@ main section{
 	
 }
 
-
 main aside {
 	
 	width: 25%;
@@ -76,14 +68,53 @@ main aside {
 	border-radius: 20px;
 }
 
+#dialog-box {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-style: none;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 20px;
+    gap: 30%;
 
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+	transition: all 0.5s;
+	
+	transform: scale(0);
+}
 
-.textInput{
+#dialog-box.animate {
+	transform: scale(1);
+	
+}
+
+#dialog-text {
+	font-size: 22px;
+	font-weight: 600;
+	color: #343a40;
+    text-align: center;
+}
+
+#dialog-close {
+	width: 100px;
+    height: 50px;
+    font-size: 18px;
+}
+
+.textInput {
 	width: 98%;
 	height: 78%;
 }
-
-
 
 .textInput textarea {
 width: 100%;
@@ -98,16 +129,12 @@ color: #0a3871;
 	
 }
 
-
-
-#decrypt-area::placeholder{
+#decrypt-area::placeholder {
 	color: #0a3871;
 	font-size: 32px;
 }
 
-
-
-.no-content{
+.no-content {
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -136,8 +163,31 @@ width: 80%;
 	color: #495057;
 }
 
+.showing-content {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 50px 10px;
+    display: none;
+}
 
-.instruction__container{
+.showing-content textarea {
+	width: 98%;
+    height: 30%;
+    background-color: var(--bg-color);
+    font-size: 15px;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 10px;
+    font-size: 25px;
+	color: #0a3871;
+}
+
+.instruction__container {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -150,13 +200,13 @@ width: 80%;
 	height: 16px;
 }
 
-.span-image{
+.span-image {
 height: 16px;
 width: 16px;
 }
 
 
-.buttons{
+.buttons {
 	width: 100%;
 	height: 20%;
 	display: flex;
@@ -165,9 +215,7 @@ width: 16px;
 	gap: 30px;
 }
 
-
-
-.encrypt-btn{
+.encrypt-btn {
 	width: 328px;
 	height: 67px;
 	color: #ffffff;
@@ -180,11 +228,11 @@ width: 16px;
 	transition: all 0.2s ease-in-out;
 }
 
-.decrypt-btn{
+.decrypt-btn {
 	width: 328px;
 	height: 67px;
 	color: #0a3871;
-	background-color: #d8dfe8;
+	background: none;
 	border: 1px solid #0a3871;
 	border-radius: 24px;
 	font-size: 16px;
@@ -193,14 +241,66 @@ width: 16px;
 	transition: all 0.2s ease-in-out;
 }
 
-.decrypt-btn:hover{
+.decrypt-btn:hover {
 	background-color: #0a3871;
 	color: #ffffff;
 }
 
-.encrypt-btn:hover{
+.encrypt-btn:hover {
 	background-color: #d8dfe8;
 	color: #0a3871;
+}
+
+.decrypt-btn:active {
+	transform: scale(0.95);
+}
+
+.encrypt-btn:active {
+	transform: scale(0.95);
+}
+
+.copy-btn {
+	width: 290px;
+	height: 67px;
+	color: #0a3871;
+	background: none;
+	border: 1px solid #0a3871;
+	border-radius: 24px;
+	font-size: 16px;
+	font-weight: 400;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.copy-btn:hover {
+	background-color: #0a3871;
+	color: #ffffff;
+}
+
+.copy-btn:active {
+	transform: scale(0.95);
+}
+
+.close-btn {
+	width: 290px;
+	height: 67px;
+	color: #0a3871;
+	background: none;
+	border: 1px solid #0a3871;
+	border-radius: 24px;
+	font-size: 16px;
+	font-weight: 400;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.close-btn:hover {
+	background-color: #0a3871;
+	color: #ffffff;
+}
+
+.close-btn:active {
+	transform: scale(0.95);
 }
 
 footer {
@@ -262,6 +362,7 @@ footer p{
 	font-size: 18px;
 	color: #495057;
 }
+
 /*responsive*/
 
 @media only screen and (max-width: 1000px) {
@@ -295,7 +396,20 @@ footer p{
 		display: none;
 	}
 
+	.showing-content {
+		height: auto;
+		padding: 10px;
+		justify-content: center;
+		gap: 5;
+	}
 
+	.showing-content textarea {
+		height: 300px;
+	}
+
+	.showing-content button {
+		width: 150px;
+	}
 }
 
 	@media only screen and (max-width: 700px) {
