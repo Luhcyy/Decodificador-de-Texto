@@ -1,7 +1,7 @@
 # Decodificador-de-Texto
 Desafio feito para o Challenge 1 do programa "ONE - Oracle Next Education" com a Oracle e Alura.
 
-## Linguagens usadas
+## :computer: Tecnologias usadas
 <p>
   <a>
     <img src=https://img.shields.io/badge/JavaScript-151515?style=for-the-badge&logo=javascript&logoColor=F7DF1E/>
@@ -10,14 +10,14 @@ Desafio feito para o Challenge 1 do programa "ONE - Oracle Next Education" com a
   </a>
 </p>
 
-## Protótipo visual do projeto
+## :page_with_curl: Protótipo visual do projeto
 <p>
   <a href=https://www.figma.com/file/tvFEYhVfZTjdJ5P24RGV21/Alura-Challenge---Desafio-1---L%C3%B3gica?type=design&node-id=16-802&mode=design&t=L0TK8n4oEjeAzLGB-0>
     <img src=https://img.shields.io/badge/Figma-151515?style=for-the-badge&logo=figma&logoColor=white/>
   </a>
 </p>
 
-## Descrição
+## :pencil2: Descrição
 
 <p>tem a capacidade de codificar e decodificar textos de acordo com as chaves de criptografia propostas!</p>
 
